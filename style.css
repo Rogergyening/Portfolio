@@ -14,9 +14,10 @@ nav{
 
 #logo_text{
     color: white;
-    text-transform: uppercase;
-    letter-spacing:5px ;
+    text-transform: lowercase;
+    letter-spacing:0px ;
     font-size: 20px;
+    font-style: oblique;
     
 }
 

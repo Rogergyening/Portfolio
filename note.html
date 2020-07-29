@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <Style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .all{
+            margin-left: 90px;
+            margin-right: 90px;
+            margin-top: 40px;
+
+        }
+        .Heading{
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+          
+        }
+        .Date{
+            font-family: 'Times New Roman', Times, serif;
+           background-color: lightpink; 
+            width: 100%;
+            border-radius: 5px;
+            padding: 15px;
+            border: red;
+            margin: auto;
+            margin-top: 20px;
+            font-size: 100%;
+            transition: 0.4s;
+            display: inline-block;
+
+        }
+        .Date::after{
+            content: "\1F53D";
+            margin-left: 98%; 
+              }
+        .active::after{
+            content: "\1F53C";
+        }
+        
+        .Notes{
+            padding: 0px 18px;
+            margin-top: 10px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        /* for mobile view */
+        @media screen and (max-width: 768px){
+        .all{
+            margin-left: 10px;
+            margin-right:10px;
+        }
+
+        }
+        
+        .Date:hover{
+           background-color:lightblue;       }
+    </Style>
+    <title>What I Was taught</title>
+</head>
+<body>
+    <div >
+    <nav id="">
+      <div class="logo">
+        <img class="image" src="./Images/Ded.png" alt="" />
+        <h4>Dede Online</h4>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="./assignment.html">Assignments</a></li>
+        <li><a href="./note.html">Lessons</a></li></ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    </div>
+    <div class="all">
+        <div class="Heading">
+            <h2>&#128218 What I Have Learnt &#128188</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi libero, iusto possimus deleniti harum nisi dolores quas. Ut, vero. Sapiente explicabo quo inventore voluptatibus, repudiandae ducimus harum quos repellat dolor.
+            </p>
+        </div>
+        <button class="Date">
+            Day 1
+            <br>
+            Monday 20th July, 2020
+            </button>
+            <div class="Notes">
+                place here what ever you learnt here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam mollitia est ab reprehenderit, quidem voluptatem explicabo officia quaerat impedit debitis!
+            </div>
+        
+         <button class="Date">
+            Day 1
+            <br>
+            Tuesday 21th July, 2020
+            </button>
+            <div class="Notes">
+                place here what ever you learnt here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam mollitia est ab reprehenderit, quidem voluptatem explicabo officia quaerat impedit debitis!
+            </div>
+        <button class="Date">
+            Day 1
+            <br>
+            Wednesday 22th July, 2020
+            </button>
+            <div class="Notes">
+                place here what ever you learnt here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam mollitia est ab reprehenderit, quidem voluptatem explicabo officia quaerat impedit debitis!
+            </div>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("Date");
+            var i;
+
+            for (i = 0; i < acc.length; i++){
+                acc[i].addEventListener("click", function (){this.classList.toggle("active");
+            var panel = this.nextElementSibling
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            }
+            else{
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        
+        })
+        }
+        </script>
+        <script src="./app.js"></script>
+</body>
+</html>

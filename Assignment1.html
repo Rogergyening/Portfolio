@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     <style type = text/css>
         div{
-            background-color:#f2f2f2;
-           padding: 100px;
+           padding: 0px;
+           margin: 0px;
            font-family: 'Times New Roman', Times, serif;
-           
            border-radius: 5px;
             }
+        .doc{
+           background-color:#f2f2f2;
+           padding: 100px;
+        }
         .Box_Size{
             background-color: white;
             width: 100%;
@@ -42,21 +46,21 @@
             border-radius: 5px;
         }
     </style>
-    <link rel="stylesheet" href="./style.css" />
-    <title>My Assignmentst</title>
+     <link rel="stylesheet" href="style.css">
+    <title>My Assignments</title>
   </head>
   <body>
     <nav>
       <div class="logo">
         <img class="image" src="./Images/Ded.png" alt="" />
-        <h4>Dede Online</h4>
+        <h4>Dede.com</h4>
       </div>
 
       <ul class="nav-links">
         <li>
           <a href="./index.html">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="./project.html">Projects</a></li>
         <li><a href="./assignment.html">Assignments</a></li>
         <li><a href="./note.html">Lessons</a></li></ul>
 
@@ -66,8 +70,8 @@
         <div class="line3"></div>
       </div>
     </nav>
-      <div>
-    <form action="">
+    <div class="doc">
+          <form action="">
       <label for="First_Name..."><b>First Name<b></label>
         <br />
       <input class="Box_Size" id="box" placeholder="Your First name..." type="text" />
@@ -95,6 +99,7 @@
         <textarea placeholder="Write something..." name="" id="Subject_Box" cols="136" rows="10"></textarea><br>
         <input id="Submit_button" type="submit" value="Submit">
     </form>
+    </div>
     </div>
      <script src="./app.js"></script>
   </body>

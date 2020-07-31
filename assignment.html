@@ -3,59 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: none;
+      }
+      .all_box{
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+       button{
+          width: 40%;
+        height: 50px;
+        background-color:lightpink;
+        border: ;
+        border-radius: 5px;
+        border-style: groove;
+        margin-top: 10px;
+          
+      }
+       @media screen and (max-width: 768px){
+        button {
+          width: 100%;
+    
+        }
+
+        }
+      button:hover{
+        background-color: cadetblue;
+        cursor: pointer;
+      }
+      
+    </style>
     <title>Document</title>
   </head>
   <body>
-    <div >
-    <nav id="">
-      <div class="logo">
-        <img class="image" src="./Images/Ded.png" alt="" />
-        <h4>Dede Online</h4>
-      </div>
+    <div>
+      <nav id="">
+        <div class="logo">
+          <img class="image" src="./Images/Ded.png" alt="" />
+          <h4>Dede Online</h4>
+        </div>
 
-      <ul class="nav-links">
-        <li>
-          <a href="./index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="./assignment.html">Assignments</a></li>
-        <li><a href="./note.html">Lessons</a></li></ul>
+        <ul class="nav-links">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="./assignment.html">Assignments</a></li>
+          <li><a href="./note.html">Lessons</a></li>
+        </ul>
 
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
     </div>
-    <ul>
-      <li>
-        <a href="./Assignment1.html"
-          >This is the link to <b><i>Assignment 1</i></b></a
-        >
-      </li>
-      <li>
-        <a href="#"
-          >This is the link to <b><i>Assignment 2</i></b></a
-        >
-      </li>
-      <li>
-        <a href="#"
-          >This is the link to <b><i>Assignment 3</i></b></a
-        >
-      </li>
-      <li>
-        <a href="#"
-          >This is the link to <b><i>Assignment 4</i></b></a
-        >
-      </li>
-      <li>
-        <a href="#"
-          >This is the link to <b><i>Assignment 5</i></b></a
-        >
-      </li>
-    </ul>
+    <div class="all_box">
+      <button ">
+        <a href="./Assignment1.html"> <b>Assignment 1</b></a></button
+      ><br />
+      <button>
+        <a href="#"><b>Assignment 2</b></a></button
+      ><br />
+      <button>
+        <a href="#"><b>Assignment 3</b></a></button
+      ><br />
+      <button >
+        <a href="#"><b>Assignment 4</b></a></button
+      ><br />
+      <button ">
+        <a href="#"><b>Assignment 5</b></a>
+      </button>
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>
